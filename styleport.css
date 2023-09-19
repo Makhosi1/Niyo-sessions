@@ -1,0 +1,14 @@
+h1{
+    color: blueviolet;
+}
+body{
+    background-color: rgb(220, 198, 205);
+    color: black;
+}
+button{
+    background-color: darkmagenta;
+    color: white;
+}
+footer{
+    text-align: center;
+}
