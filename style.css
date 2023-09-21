@@ -5,3 +5,43 @@ button{
     background-color: darkseagreen;
     color:white;
 }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+div p{
+  
+background-color: coral;
+}
+
+div > p {
+    background-color: rgb(247, 0, 255);
+}
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+div ~ p{
+    background-color: lime;
+}
+
+*.second-div{
+    font-size: x-large;
+}
+
+.flex-container {
+    
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.second-div

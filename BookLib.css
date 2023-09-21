@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(248, 243, 236);
 }
 
 .preheader {
@@ -62,11 +63,13 @@ section .each-book{
 }
 section .each-book .info h3{
     color: rgb(44, 161, 44);
+    font-size: larger;
     font-weight: 900
     
 }
 section .each-book .info h2{
     color: rgb(44, 161, 44);
+    font-size: large;
     font-weight: 900;
 }
 
@@ -89,4 +92,51 @@ button:hover{
     background-color:green ;
     color: white;
 
+
+}
+
+
+
+@media only screen and (max-width:320px){
+    .preheader h1{
+        font-size: medium;
+        color: fuchsia;
+    
+    }
+    
+    section .each-book{
+        flex-direction: column;
+        
+    
+    }
+    section {
+        width:95%
+    }
+    img{
+        width: 100px;
+    height: 1500px;
+    border-radius: 10px; 
+    }
+    
+}
+
+@media only screen and (min-width:321px) and (max-width:720px){
+
+    section .each-book{
+        flex-direction: column;
+    
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:994px){
+
+    section .each-book{
+        flex-direction:column;
+    
+    }
+    
 }
