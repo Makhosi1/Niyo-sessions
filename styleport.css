@@ -2,13 +2,20 @@ h1{
     color: blueviolet;
 }
 body{
-    background-color: rgb(220, 198, 205);
+    /*background: linear-gradient(to right, green, rgb(220, 198, 205));*/
     color: black;
+    background-image:linear-gradient( rgba(139, 0, 139,0.5),rgba(255,255,255,1)), url(Dauti\ s\ Mabusa.jpg);
+    background-size: cover;
 }
 button{
-    background-color: darkmagenta;
+    background:linear-gradient( rgba(139, 0, 139,1),rgba(255,255,255,1));
     color: white;
 }
 footer{
     text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
 }
