@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- root element-->
     <head>
         <meta name="description" content="My first web page">
         <title> My web page</title>
@@ -19,10 +19,10 @@
       </style>
        
     </head>
-<body></body>
+<body>
 
     <header style="background-color: rgb(42, 159, 165);">
-        <nav> 
+        <nav id="navigationbar"> 
             <a href="https://amazon.com" target="_blank">Home</a>
             <a href="https://amazon.com" target="About us">About us</a>
             <a href="https://amazon.com" target="Contact us">Contact us</a>
@@ -30,7 +30,10 @@
     </header>
     
     <section>
-        <p> Hello World, I am a web developer</p>
+        <p>Hello World, I am a web developer</p>
+        <p class="text-center"> first paragraph</p>
+        <p class="text-center"> second paragraph</p>
+        <p>third paragraph</p>
     </section>
     <h1 style="background-color: darkorange;">Welcome to my web page</h1>
     <h2 id="x name">Welcome to my web page</h2>
@@ -53,7 +56,7 @@
         </div>
 
    <h4 class="para-name">Favorite Countries</h4>
-   <ul>
+   <ul class="centeredList">
     <li>Zimbabwe</li>
     <li>Namibia</li>
     <li>Ghana</li>
@@ -93,6 +96,7 @@ style="width:500px;height:300px";>
         
     </div>
 </div>
+
 <form>
     <label>First Name</label>
     <input type="text"/><br>
@@ -104,8 +108,7 @@ style="width:500px;height:300px";>
     <label>Yes</label>
     <input type="radio"/>
     <label>No</label>
-    <input type="radio"/><br>
-    <button>Click me</button>
+    <button type="button" onclick="handleButtonClick()" >Click me</button>
 
     <table width="100%">
         <tr>
@@ -125,12 +128,31 @@ style="width:500px;height:300px";>
         </tr>
     </table>
 
+    <div id="list-container"></div>
+
+    <form>
+        <label> Name </label>
+        <input type="text" id="tryOut" placeholder="First and last name">
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output">
+
+    </div>
+
 </form>
 
     <footer>
         <p>Copyright 2023, Built by Makhosi</p>
     
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src ="js/index.js"></script>
+    <script src="js/index-one.js"></script>
+
 </body>
 
 </html>

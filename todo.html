@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>To-do-List</title>
+    <style>
+        body{ 
+            background:linear-gradient(to  left, rgb(228, 172, 237), rgb(172, 164, 247));
+        }
+        section{
+            width: 100%;
+        }
+        
+        form {
+            width:100%;
+            text-align: center;
+
+        }
+        input{
+            width: 20%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        button {
+            height: 40px;
+            border-radius: 20px;
+            background-color: rgb(169, 234, 191);
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+    <form>
+        <label for="input-item"> <b>New Task</b></label><br>
+        <input type="text" id="input-item" placeholder="Add an item" required>
+        <button type="submit"> Add to list</button>
+    </form>
+    <ul id="items"></ul>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="js/index-one.js"></script>
+</body>
+</html>
